@@ -1,0 +1,125 @@
+header {
+    display: flex;
+    width: 100%;
+    
+    height: auto;
+    background-color: #e9e9e9;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav {
+    padding: 0.6rem 1.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.5s linear;
+}
+
+.navbar-brand {
+    width: 120px;
+    height: auto;
+    display: block;
+}
+
+.navbar-list {
+    list-style-type: none;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    text-transform: capitalize;
+    gap: 1.5rem;
+    display: flex;
+}
+
+.nav-links {
+    text-decoration: none;
+    color: #222;
+    font-weight: 500;
+    font-size: 1.3rem;
+}
+
+.icons {
+    padding-right: 2rem;
+}
+
+.icons-side {
+    list-style-type: none;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    text-transform: capitalize;
+    gap: 1.5rem;
+    display: flex;
+}
+
+.cart {
+    position: relative;
+}
+
+.count {
+    position: absolute;
+    top: 1rem;
+    font-size: 0.8rem;
+    font-weight: 500;
+    text-align: center;
+    width: 1.2rem;
+    height: 1.2rem;
+    border-radius: 50%;
+    background-color: rgb(148, 195, 236);
+}
+
+.nav-icons {
+    font-weight: 600;
+    font-size: 1.3rem;
+    cursor: pointer;
+    color: #222;
+}
+
+.mobiles {
+    display: none;
+}
+
+.mobile_icons {
+    list-style-type: none;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding-right: 0.3rem;
+    text-transform: capitalize;
+    gap: 0.5rem;
+    display: flex;
+}
+
+.mobile_icon {
+    font-weight: 600;
+    font-size: 1.3rem;
+    cursor: pointer;
+    color: #222;
+}
+
+.open {
+    display: none;
+}
+
+@media screen and (max-width: 860px) {
+
+    .navbar-list {
+        position: fixed;
+        top: 4rem;
+        border: 1px solid;
+        left: 0;
+        margin: 0 auto;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .mobiles {
+        display: block;
+    }
+
+    .close {
+        display: none;
+    }
+
+}

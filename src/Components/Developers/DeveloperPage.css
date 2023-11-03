@@ -1,0 +1,83 @@
+/* DeveloperPage.css */
+
+.dev-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: linear-gradient(135deg, #667eea 0%, #764ba2 100%);    padding: 20px;
+  }
+  
+  .dev-banner img {
+    max-width: 100%;
+    margin-bottom: 20px;
+  }
+  
+  .dev-content {
+    text-align: center;
+  }
+  
+  .dev-content h2 {
+    font-size: 64px;
+    color: white;
+    margin-bottom: 10px;
+  }
+  
+  .dev-content p {
+    font-size: 19px;
+    margin-bottom: 20px;
+    font-weight: 700;
+  }
+  .dev-content a{
+    color: #fff;
+  }
+  
+  .dev-tech-list {
+    margin: 0 auto;
+    scroll-snap-align: x;
+    max-width: 1200px;
+    scroll-snap-align: start;
+    list-style: none;
+    overflow-x: scroll; /* Allow horizontal scrolling */
+    scroll-snap-type: x mandatory; /* Enable horizontal snap-scrolling */
+  
+    display: flex;
+    gap: 1.2rem;
+    padding: 0;
+  }
+  /* For Webkit-based browsers (e.g., Chrome) */
+::-webkit-scrollbar {
+    width: 12px; /* Width of the scrollbar */
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+    border-radius: 6px; /* Rounded corners */
+    /* Track color */
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: #ce1010; /* Thumb color */
+    border-radius: 6px; /* Rounded corners */
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555; /* Thumb color on hover */
+  }
+  
+  .dev-tech-list li {
+    border: 2px solid #fff;
+    align-items: center;
+    font-size: 16px;
+    width: 200px;
+    color: #fff;
+    margin-bottom: 10px;
+  }
+  
+  .dev-tech-list li img {
+    width: 200px;
+    height: 200px;
+    margin-right: 10px;
+  }
+  
+  /* You can add more specific styling as needed */
+  
